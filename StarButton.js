@@ -34,22 +34,22 @@ const iconSets = {
 
 const propTypes = {
   buttonStyle: ViewPropTypes.style,
-  disabled: PropTypes.bool.isRequired,
-  halfStarEnabled: PropTypes.bool.isRequired,
+  disabled: PropTypes.bool,
+  halfStarEnabled: PropTypes.bool,
   icoMoonJson: PropTypes.string,
-  iconSet: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired,
-  reversed: PropTypes.bool.isRequired,
-  starColor: PropTypes.string.isRequired,
+  iconSet: PropTypes.string,
+  rating: PropTypes.number,
+  reversed: PropTypes.bool,
+  starColor: PropTypes.string,
   starIconName: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.object,
     PropTypes.number,
-  ]).isRequired,
-  starSize: PropTypes.number.isRequired,
-  activeOpacity: PropTypes.number.isRequired,
+  ]),
+  starSize: PropTypes.number,
+  activeOpacity: PropTypes.number,
   starStyle: ViewPropTypes.style,
-  onStarButtonPress: PropTypes.func.isRequired,
+  onStarButtonPress: PropTypes.func,
 };
 
 const defaultProps = {
